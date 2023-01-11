@@ -5,14 +5,12 @@ from dotenv import load_dotenv
 import streamlit as st
 import os
 
-def configure():
-    load_dotenv()
+st.write("DB username:", st.secrets["url_s2t"])
+st.write("DB password:", st.secrets["iam_apikey_s2t"])
 
-configure()
-
-authenticator = IAMAuthenticator(os.getenv('iam_apikey_s2t'))
+authenticator = IAMAuthenticator(st.secrets["iam_apikey_s2t"])
 s2t = SpeechToTextV1(authenticator=authenticator)
-s2t.set_service_url(os.getenv('url_s2t'))
+s2t.set_service_url(st.secrets["url_s2t"])
 final_result = ""
 st.markdown("<h1 style='text-align: center;'> Speech To Text Converter</h1>", unsafe_allow_html=True)
 st.markdown("---", unsafe_allow_html=True)
