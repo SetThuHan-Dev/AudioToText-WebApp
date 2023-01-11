@@ -7,7 +7,7 @@ https://setthuhan-dev-speechtotext-speechtotext-j7ecy0.streamlit.app/
 > Get your audio transcript
 > Note: Eng Speech to Text without background music works best. Others wouldn't work as you expected.
 
-MP3 Sample
+Tested MP3 Sample from
 https://www.youtube.com/watch?v=dZIyNuVvu40
 
 Converted into Text
