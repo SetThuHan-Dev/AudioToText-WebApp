@@ -5,9 +5,6 @@ from dotenv import load_dotenv
 import streamlit as st
 import os
 
-st.write("DB username:", st.secrets["url_s2t"])
-st.write("DB password:", st.secrets["iam_apikey_s2t"])
-
 authenticator = IAMAuthenticator(st.secrets["iam_apikey_s2t"])
 s2t = SpeechToTextV1(authenticator=authenticator)
 s2t.set_service_url(st.secrets["url_s2t"])
