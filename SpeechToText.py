@@ -9,7 +9,7 @@ authenticator = IAMAuthenticator(st.secrets["iam_apikey_s2t"])
 s2t = SpeechToTextV1(authenticator=authenticator)
 s2t.set_service_url(st.secrets["url_s2t"])
 final_result = ""
-st.markdown("<h1 style='text-align: center;'> Speech To Text Converter</h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: center;'> Audio To Text Converter</h1>", unsafe_allow_html=True)
 st.markdown("---", unsafe_allow_html=True)
 
 audio_file = st.file_uploader("Upload Your Mp3 Audio File", type=['mp3'])
