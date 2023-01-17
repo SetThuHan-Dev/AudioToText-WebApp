@@ -1,4 +1,4 @@
-# Speech-to-Text-Converter
+# Audio-to-Text-Converter
 This web app is using IBM Cloud's S2T API and hosted by streamlit cloud
 
 ### https://setthuhan-dev-speechtotext-speechtotext-j7ecy0.streamlit.app/
